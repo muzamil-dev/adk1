@@ -61,15 +61,6 @@ blogger_revise_agent = Agent(
     output_key="blog_content"
 )
 
-blogger_outline_agent = Agent(
-    name="blogger_outline_agent",
-    model="gemini-2.0-flash",
-    description="Agent to outline a blog post series on a specific theme.",
-    instruction="I can help you outline a series of blog posts on a specific theme. Just provide me with the theme and I'll create an outline for you!",
-    tools=[google_search],
-    output_key="blog_series_outline"
-)
-
 blogger_review_agent2 = Agent(
     name="blogger_review_agent",
     model="gemini-2.0-flash",
