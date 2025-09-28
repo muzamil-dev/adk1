@@ -6,6 +6,11 @@ from google.adk.runners import Runner
 from google.adk.tools import load_memory # Tool to query memory
 from google.genai.types import Content, Part
 
+## load environment variables from .env file
+from dotenv import load_dotenv
+load_dotenv()
+
+
 # --- Constants ---
 APP_NAME = "memory_example_app"
 USER_ID = "mem_user"
