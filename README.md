@@ -10,6 +10,43 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## Get Your Google API Key
+
+You'll need a Google API key to use the Gemini AI models:
+
+1. Visit the [Google AI Studio API Key page](https://ai.google.dev/gemini-api/docs/api-key)
+2. Sign in with your Google account
+3. Click **"Create API Key"**
+4. Copy your API key and save it somewhere safe
+
+### Setup environment variables
+
+### Linux/Mac
+
+``` bash
+export GOOGLE_GENAI_USE_VERTEXAI=FALSE
+export GOOGLE_API_KEY=FIXME
+export GEMINI_API_KEY=fix
+```
+
+### Windows
+
+**Command Prompt:**
+``` cmd
+set GOOGLE_GENAI_USE_VERTEXAI=FALSE
+set GOOGLE_API_KEY=FIXME
+set GEMINI_API_KEY=fix
+```
+
+**PowerShell:**
+``` powershell
+$env:GOOGLE_GENAI_USE_VERTEXAI="FALSE"
+$env:GOOGLE_API_KEY="FIXME"
+$env:GEMINI_API_KEY="fix"
+```
+
+
+
 ## Available Agents
 
 ### 1. Cover Letter Drafter (`agents/cover_letter_drafter/`)
