@@ -3,7 +3,10 @@
 Runner for the LinkedIn Post Helper Agent
 """
 
-from .agent import root_agent
+from dotenv import load_dotenv
+load_dotenv()  # loads GOOGLE_API_KEY and others from .env
+
+from agents.linkedin_post.agent import root_agent
 
 if __name__ == "__main__":
     print("💼 LinkedIn Post Helper Agent ✍️")
@@ -15,10 +18,10 @@ if __name__ == "__main__":
             print("Goodbye 👋")
             break
 
-        # Generate post draft from your agent
-        response = root_agent.generate(user_input)
+        # Call the agent
+        response = root_agent.respond(user_input)
 
-        # Depending on ADK version, response may be Content/Part or plain text
+        # Handle different ADK return types
         if hasattr(response, "text"):
             print("\n📢 Draft Post:\n")
             print(response.text)
