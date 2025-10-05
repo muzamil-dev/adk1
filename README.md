@@ -69,21 +69,45 @@ python run_cover_letter.py           # Simple example
 python test_scenarios.py             # Multiple test scenarios
 ```
 
-### 2. Blogger (`agents/blogger/`)
+### 2. Resume Optimizer (`agents/resume_optimizer/`)
+**Three-stage pipeline for optimizing resumes for maximum impact**
+
+- **Analyzer Agent**: Comprehensive resume analysis and gap identification
+- **Optimizer Agent**: Generates specific optimization recommendations
+- **Formatter Agent**: Creates final ATS-optimized resume
+
+**Features:**
+- Content and achievement analysis
+- ATS compatibility optimization
+- Industry keyword integration
+- Professional formatting and positioning
+- Market alignment analysis
+
+**Usage:**
+```bash
+cd agents/resume_optimizer
+python run_resume.py                 # Simple example
+python test_scenarios.py             # Multiple test scenarios
+```
+
+### 3. Blogger (`agents/blogger/`)
 **Multi-agent blog writing and editing pipeline**
 
 - Content creation and revision workflow
 - Quality review and feedback system
 - SEO and engagement optimization
 
-### 3. Code and Review (`agents/code_and_review/`)
+### 4. Code and Review (`agents/code_and_review/`)
 **Code generation and review automation**
 
-### 4. Multi-Tool Agent (`agents/multi_tool_agent/`)
-**General-purpose agent with multiple tool integrations**
+### 5. LinkedIn Post (`agents/linkedin_post/`)
+**Professional social media content creation**
 
-### 5. Spock Agent (`agents/spock_agent/`)
-**Star Trek Spock personality agent**
+### 6. Weather (`agents/weather/`)
+**Weather and time information utility agent**
+
+### 7. Blog Planning (`agents/blog_planning/`)
+**Content strategy and blog series outlining**
 
 ## Project Structure
 
@@ -93,10 +117,12 @@ python test_scenarios.py             # Multiple test scenarios
 │   └── cover_letter_integration_example.py
 ├── agents/                   # Agent definitions
 │   ├── cover_letter_drafter/ # Cover letter creation pipeline
+│   ├── resume_optimizer/    # Resume analysis and optimization
 │   ├── blogger/             # Blog writing pipeline  
 │   ├── code_and_review/     # Code review agents
-│   ├── multi_tool_agent/    # Multi-purpose agent
-│   └── spock_agent/         # Personality agent
+│   ├── linkedin_post/       # Social media content
+│   ├── weather/             # Weather and time utility
+│   └── blog_planning/       # Content strategy planning
 ├── requirements.txt         # Python dependencies
 └── README.md               # This file
 ```
