@@ -90,7 +90,28 @@ python run_resume.py                 # Simple example
 python test_scenarios.py             # Multiple test scenarios
 ```
 
-### 3. Blogger (`agents/blogger/`)
+### 3. Email Assistant (`agents/email_assistant/`)
+**Three-stage pipeline for creating professional emails**
+
+- **Drafter Agent**: Creates initial professional email drafts
+- **Reviewer Agent**: Reviews for effectiveness, tone, and professionalism
+- **Polisher Agent**: Produces final optimized, ready-to-send emails
+
+**Features:**
+- Professional email types (follow-ups, networking, meetings, updates)
+- Tone adaptation for different contexts and recipients
+- Structure optimization with clear subject lines and call-to-actions
+- Business communication best practices
+- Grammar and etiquette validation
+
+**Usage:**
+```bash
+cd agents/email_assistant
+python run_email.py                  # Simple example
+python test_scenarios.py             # Multiple test scenarios
+```
+
+### 4. Blogger (`agents/blogger/`)
 **Multi-agent blog writing and editing pipeline**
 
 - Content creation and revision workflow
@@ -118,6 +139,7 @@ python test_scenarios.py             # Multiple test scenarios
 ├── agents/                   # Agent definitions
 │   ├── cover_letter_drafter/ # Cover letter creation pipeline
 │   ├── resume_optimizer/    # Resume analysis and optimization
+│   ├── email_assistant/     # Professional email creation
 │   ├── blogger/             # Blog writing pipeline  
 │   ├── code_and_review/     # Code review agents
 │   ├── linkedin_post/       # Social media content
