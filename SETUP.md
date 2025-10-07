@@ -105,7 +105,3 @@ Once setup is complete, you can:
 - **API key errors**: Make sure your `GOOGLE_API_KEY` environment variable is set correctly
 - **Permission errors**: On Linux/Mac, you might need to use `sudo` for some installations
 
-**Need Help?**
-- Check the project's GitHub issues page
-- Review the main README.md file for more detailed information
-
